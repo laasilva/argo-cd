@@ -11,10 +11,10 @@ metadata:
     traefik.ingress.kubernetes.io/redirect-entry-point: https
 spec:
   rules:
-  - host: lrsslv.dev
+  - host: argo.lrsslv.dev
     http:
       paths:
-      - path: /argo
+      - path: /
         pathType: Prefix
         backend:
           service:
@@ -23,5 +23,5 @@ spec:
               number: 80
   tls:
   - hosts:
-    - lrsslv.dev
+    - argo.lrsslv.dev
     secretName: argocd-server-tls
