@@ -7,7 +7,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
   rules:
-  - host: argo.<your-domain.com>
+  - host: argo.lrsslv.dev
     http:
       paths:
       - path: /
