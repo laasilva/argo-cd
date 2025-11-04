@@ -12,3 +12,5 @@ spec:
       - "--certificatesresolvers.letsencrypt.acme.storage=/data/acme.json"
       - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
       - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      - "--providers.kubernetesingress.ingressendpoint.ip=3.146.162.3"
+
